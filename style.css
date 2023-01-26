@@ -180,7 +180,7 @@ header ul a {
     position: relative;
     transform: translateY(40%);
     text-align: center;
-    /* box-shadow: 0 0 20px rgba(0,0,0,0.5); */
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 .early-access h2{
     font-size: 3rem;

@@ -175,7 +175,7 @@ header ul a {
     max-width: 900px;
     padding: 40px 30px;
     background-color: var(--dark-blue-mainBG);
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 8px;
     position: relative;
     transform: translateY(40%);

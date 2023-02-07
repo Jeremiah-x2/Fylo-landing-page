@@ -7,6 +7,7 @@
     --blue-CTA: hsl(198, 60%, 50%);
     --light-red-error: hsl(0, 100%, 63%);
     --white: hsl(0, 0%, 100%);
+    --black: #000;
     --open-sans: 'Open Sans', sans-serif;
     --raleway: 'Raleway', sans-serif;
 }
@@ -47,6 +48,23 @@ header ul a {
     text-decoration: none;
 }
 
+.nav li {
+    position: relative;
+}
+.nav li:hover {
+    font-weight: 600;
+}
+.nav li:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    border: 1px solid;
+    width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+}
 
 .body-content {
     width: 100%;
@@ -78,12 +96,13 @@ header ul a {
     background-color: var(--cyan-CTA);
     color: var(--white);
     border-radius: 40px;
+    font-weight: 600;
 }
 
 .access-security, .real-time__store {
     /* border: 1px solid green; */
     max-width: 850px;
-    margin: 100px auto 1px;
+    margin: 100px auto 50px;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -103,8 +122,6 @@ header ul a {
     justify-content: space-around;
     align-items: center;
 }
-
-
 
 .production {
     width: 40%;
@@ -137,6 +154,10 @@ header ul a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.productive p:last-of-type:hover {
+    cursor: pointer;
+}
+
 .testimonial {
     position: relative;
     width: 90%;
@@ -199,7 +220,12 @@ header ul a {
     width: 68%;
     border: none;
     border-radius: 40px;
+    color: var(--black);
 }
+.early-access input:focus {
+    border: none;
+}
+
 .early-access button{
     width: 28%;
     padding: 20px 30px;
@@ -249,9 +275,12 @@ footer ul {
     width: 25px;
     height: 25px;
     text-align: center;
-    /* flex-direction: row; */
     border: 2px solid;
     border-radius: 50%;
+}
+.icons li:hover, .icons [class*='fa']:hover {
+    color: var(--cyan-CTA);
+    cursor: pointer;
 }
 
 .contact ul li img {
